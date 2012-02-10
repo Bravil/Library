@@ -1,3 +1,7 @@
 Library::Application.routes.draw do
-  root :to => 'welcome#index'
+  root :to => 'site#index'
+
+  resources :books
+
+
 end
