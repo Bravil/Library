@@ -27,3 +27,7 @@
 <p>
   <%= link_to "Delete this book", book_path(@book), method: :delete %>
 </p>
+
+<p>
+  <%= link_to "Reserve", new_book_reservation_path(@book) %>
+</p>

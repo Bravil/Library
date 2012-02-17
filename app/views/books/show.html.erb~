@@ -25,5 +25,9 @@
 </p>
 
 <p>
-  <%= link_to "Delete this book", book_path(@book), remote:true %>
+  <%= link_to "Delete this book", book_path(@book), method: :delete %>
+</p>
+
+<p>
+  <%= link_to "Add a reservation", new_book_reservation_path %>
 </p>

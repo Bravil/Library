@@ -1,7 +1,9 @@
 Library::Application.routes.draw do
-  root :to => 'site#index'
-
-  resources :books
-
-
+ resources :books do
+    resources :reservations, only: [:create, :new] do
+      member do
+        put :free
+      end
+    end
 end
+

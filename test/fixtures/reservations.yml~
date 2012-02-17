@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+reservation1:
+  book_id: 1
+  email: testing@gmail.con
+  state: free
+
